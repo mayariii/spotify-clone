@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="sidebar">
+        <img class="logo" src="./assets/spotify-logo.png" alt="Spotify Logo">
+        <ul>
+            <li>
+                <ion-icon name="home-outline"></ion-icon> Home
+            </li>
+            <li>
+                <ion-icon name="search-outline"></ion-icon> Search
+            </li>
+            <li>
+                <ion-icon name="grid-outline"></ion-icon> Library
+            </li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <nav id="navbar">
+            <section id="navbar-left">
+                <ion-icon class="navbar-arrow" name="chevron-back-outline"></ion-icon>
+                <ion-icon class="navbar-arrow" name="chevron-forward-outline"></ion-icon>
+
+                <div id="search-wrapper">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="search">
+                </div>
+            </section>
+
+            <section id="navbar-right">
+                <button class="navbar-btn" id="signup-btn">SIGN UP</button>
+                <button class="navbar-btn" id="login-btn">LOGIN</button>
+            </section>
+        </nav>
+
+        <section id="main">
+
+            <div class="card">
+                <div class="media">
+                    <img src="./assets/album-cover.jpeg" alt="Album Cover">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </div>
+                <div class="card-body">
+                    <p>Song title</p>
+                    <p>Artist name</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="media">
+                    <img src="./assets/album-cover.jpeg" alt="Album Cover">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </div>
+                <div class="card-body">
+                    <p>Song title</p>
+                    <p>Artist name</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="media">
+                    <img src="./assets/album-cover.jpeg" alt="Album Cover">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </div>
+                <div class="card-body">
+                    <p>Song title</p>
+                    <p>Artist name</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section id="footer-txt">
+            <p>PREVIEW OF SPOTIFY</p>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </section>
+
+        <button>SIGN UP FOR FREE</button>
+
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
