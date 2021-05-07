@@ -126,7 +126,11 @@ body {
     flex-wrap: wrap;
 }
 
-.card {
+.card-body {
+    padding: 0;
+}
+
+.song-card {
     padding: 1em;
     cursor: pointer;
 }
@@ -135,12 +139,12 @@ body {
     position: relative;
 }
 
-.card img {
+.song-card img {
     width: 200px;
     height: 200px;
 }
 
-.card ion-icon {
+.song-card ion-icon {
     background-color: green;
     border-radius: 50px;
     color: white;
@@ -155,8 +159,17 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+.song-card p {
+    margin: 2px;
+}
+
+.song-card :first-child {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
 /* target ion icon on card hover */
-.card:hover ion-icon {
+.song-card:hover ion-icon {
     opacity: 1;
     transform: translateY(0%);
 }
@@ -179,6 +192,10 @@ body {
 #footer-txt {
     color: white;
     padding-left: 2em;
+}
+
+#footer-txt:first-child {
+    margin-top: 15px;
 }
 
 #footer button {
